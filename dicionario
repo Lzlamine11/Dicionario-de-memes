@@ -1,0 +1,13 @@
+meme_dict = {"CRINGE": "Algo vergonhoso ou constrangedor", "STALKEAR": "Investigar a vida de alguém online", "AURA": "Uma coisa que não tem sentido, só é um meme"}
+
+while True:
+    word = input("\nDigite uma palavra (ou sair para fechar): ").upper()
+    
+    if word == "SAIR":
+        print("Programa encerrado. Até mais!")
+        break
+        
+    if word in meme_dict:
+        print("Significado: " + meme_dict[word])
+    else:
+        print("Essa palavra não foi encontrada no dicionário.")
